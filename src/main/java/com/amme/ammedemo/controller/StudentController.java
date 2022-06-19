@@ -28,6 +28,7 @@ public class StudentController {
 		dao.save(student);
 		return "index";
 	}
+	//123
 	
 
 
