@@ -14,7 +14,7 @@
 
         <a href="http://localhost:8080/myapp/addStudent">新增學生</a>
         <br>
-        <a href="">查看所有學生</a>
+        <a href="http://localhost:8080/myapp/showStudent">查看所有學生</a>
 
 
     </body>
