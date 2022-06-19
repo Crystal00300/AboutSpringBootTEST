@@ -2,6 +2,7 @@ package com.amme.ammedemo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -26,6 +27,12 @@ public class StudentController {
 		student.setNumber(number);
 		student.setGender(gender);
 		dao.save(student);
+		return "index";
+	}
+	
+	@PostMapping("deleteStudent")
+	public String deleteStudent(@RequestParam("number")Integer number) {
+		studentService.deleteStudent(number);
 		return "index";
 	}
 	

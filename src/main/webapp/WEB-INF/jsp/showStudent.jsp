@@ -28,11 +28,17 @@
                         <th>學號</th>
                         <th>姓名</th>
                         <th>性別</th>
+                        <th>修改</th>
+                        <th>刪除</th>
                     </tr>
                 </thead>
                 <tbody class="student" id="student">
+                    <tr>
+
+                    </tr>
 
                 </tbody>
+
             </table>
 
 
@@ -64,6 +70,11 @@
                     <td>` + value.number + `</td>
                     <td>` + value.name + `</td>
                     <td>` + value.gender + `</td>
+                    <td>  <form action="deleteStudent" method="post">
+                            <input type="submit" value="刪除">
+                            <input type="hidden" value="` + value.number + `" name="number">
+                        </form></td>
+                    <td></td>
                     </tr>
                    
                     
