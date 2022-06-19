@@ -14,5 +14,9 @@ public class PageController {
 	public String addStudent() {
 		return "addStudent";
 	}
+	@GetMapping("/showStudent")
+	public String showStudent() {
+		return "showStudent";
+	}
 	
 }
