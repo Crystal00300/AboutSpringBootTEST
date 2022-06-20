@@ -18,4 +18,8 @@ public class StudentService {
 	public void save(Student student) {
 		studentDao.save(student);
 	}
+	
+	public void deleteStudent(Integer number) {
+		studentDao.deleteStudentByNumber(number);
+	}
 }
